@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>CRUD System</title>
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-start vh-100 bg-light shadow-lg w-75">
+    <div class="row w-100 justify-content-center">
+      <div class="col-8">
+        <div class="form-container">
+          <h1 class="text-center mb-4">CRUD System</h1>
+
+          <div class="input-group">
+            <label for="m1">Product Name</label>
+          </div>
+          <input type="text" id="m1" class="form-control">
+
+          <div class="input-group">
+            <label for="m2">Product Category</label>
+          </div>
+          <input type="text" id="m2" class="form-control">
+
+          <div class="input-group">
+            <label for="m3">Product Price</label>
+          </div>
+          <input type="text" id="m3" class="form-control">
+
+          <div class="input-group">
+            <label for="m4">Product Description</label>
+          </div>
+          <textarea rows="4" id="m4" class="form-control"></textarea>
+
+          <div class="text-center">
+            <button class="btn btn-outline-primary" onclick="addProduct()">Add Product</button>
+          </div>
+        </div>
+
+        <div class="table-container mt-4 bg-light shadow-lg w-100">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="productTable">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
